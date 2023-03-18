@@ -188,7 +188,7 @@ nav .brand {
     }
 
     .main-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .main-container .content-bx {
