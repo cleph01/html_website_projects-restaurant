@@ -226,9 +226,13 @@ nav .brand {
         transform: scale(2);
     }
 
+    .main-container .dish-bx {
+        text-align: center;
+    }
     .main-container .dish-bx .dish1 {
         padding-top: 5rem;
-        width: 30rem;
-        height: 30rem;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
