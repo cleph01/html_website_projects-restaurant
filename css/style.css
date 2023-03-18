@@ -30,7 +30,6 @@ html {
 
 body {
     width: 100%;
-    height: calc(100vh - 3rem);
     padding: 2rem 0;
 }
 
@@ -67,23 +66,25 @@ nav .brand {
 }
 
 .main-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
+    height: calc(100vh - 10rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2.5rem;
 }
 
 .main-container .content-bx {
-    width: 50%;
-    height: 100%;
-    padding: 0 0 0 6rem;
+    height: 40rem;
+    margin: 0 0 0 5rem;
+}
+.main-container .content-bx .content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3.5rem 0 0 0;
 }
-
 .main-container .content-bx .title {
     font-size: var(--h3-font);
     color: crimson;
@@ -98,7 +99,7 @@ nav .brand {
     font-size: var(--p-font);
     color: var(--text-color);
     line-height: 1.5;
-    margin: 1rem 0 2rem;
+    margin: 0.5rem 0 0 0;
 }
 
 .main-container .content-bx button {
@@ -110,8 +111,7 @@ nav .brand {
     color: var(--second-color);
     box-shadow: 0.3rem 0.5rem 0.8rem gray;
     cursor: pointer;
-    margin-bottom: 6rem;
-    font-size: var(--p-font);
+    margin: 2.5rem 0 0 0;
 }
 
 .main-container .content-bx button:hover {
@@ -121,7 +121,7 @@ nav .brand {
 .main-container .content-bx .menu {
     position: absolute;
     height: 10rem;
-    bottom: 0;
+    bottom: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -129,8 +129,8 @@ nav .brand {
 }
 
 .main-container .content-bx .menu img {
-    width: 6rem;
-    height: 6rem;
+    width: 9rem;
+    height: 9rem;
     margin-right: 3.5rem;
     transition: all 0.45s ease;
     cursor: pointer;
@@ -165,7 +165,7 @@ nav .brand {
     }
 
     .main-container .content-bx {
-        padding: 0 4rem 0;
+        padding: 0 2rem 0;
     }
 
     .main-container .content-bx .menu img {
@@ -188,13 +188,19 @@ nav .brand {
     }
 
     .main-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        height: 0;
     }
 
     .main-container .content-bx {
-        padding: 0 2rem;
-        width: 100%;
+        margin: 0;
+        order: 1;
     }
+
+    .main-container .content-bx .content {
+        margin: 0;
+    }
+
     .main-container .content-bx p {
         margin: 1rem 0 2rem;
     }
@@ -202,22 +208,26 @@ nav .brand {
         width: 12rem;
         padding: 0.5rem 0.5rem;
         font-size: 1.4rem;
-    }
-
-    .main-container .content-bx .menu {
-        justify-content: space-between;
-    }
-    .main-container .content-bx .menu img {
-        transform: scale(0.8);
-        margin-right: 0.75rem;
+        margin: 0;
     }
 
     .main-container .dish-bx {
-        width: 100%;
-        margin: 5rem 0 0;
+        height: 33rem;
     }
+    .main-container .content-bx .menu {
+        margin-left: 1rem;
+    }
+    .main-container .content-bx .menu img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .main-container .content-bx .menu img:hover {
+        transform: scale(2);
+    }
+
     .main-container .dish-bx .dish1 {
-        padding-top: 2rem;
+        padding-top: 5rem;
         width: 30rem;
         height: 30rem;
     }
