@@ -81,7 +81,7 @@ nav .brand {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 2rem 0 0 0;
+    margin: 0.1rem 0 0 0;
 }
 .main-container .content-bx .title {
     font-size: var(--h3-font);
@@ -97,7 +97,7 @@ nav .brand {
     font-size: var(--p-font);
     color: var(--text-color);
     line-height: 1.5;
-    margin: 1rem 0 2rem;
+    margin: 0;
 }
 
 .main-container .content-bx button {
@@ -109,7 +109,7 @@ nav .brand {
     color: var(--second-color);
     box-shadow: 0.3rem 0.5rem 0.8rem gray;
     cursor: pointer;
-    margin: 2.5rem 0 0 0;
+    margin: 1.5rem 0;
 }
 
 .main-container .content-bx button:hover {
@@ -119,7 +119,6 @@ nav .brand {
 .main-container .content-bx .menu_image_group {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
 }
 
 .main-container .content-bx .menu_image_group .small-img-col {
@@ -136,8 +135,7 @@ nav .brand {
 }
 
 .main-container .main-dish-bx {
-    width: 48%;
-    margin: 0 0 0 5rem;
+    width: 100%;
 }
 
 .main-container .main-dish-bx > img {
@@ -163,51 +161,5 @@ nav .brand {
         margin-top: -4rem;
         width: 30rem;
         height: 30rem;
-    }
-}
-
-@media (max-width: 380px) {
-    :root {
-        --h3-font: 1.2rem;
-        --h2-font: 1.6rem;
-        --h1-font: 1.8rem;
-        --p-font: 1.2rem;
-    }
-
-    nav ul li a {
-        font-size: 1.4rem;
-    }
-    .main-container {
-        flex-direction: column-reverse;
-        margin-top: 0;
-    }
-
-    .main-container .content-bx {
-        width: 100%;
-    }
-
-    .main-container .content-bx .content {
-        margin: 2rem 0 0 0;
-    }
-    .main-container .content-bx p {
-        margin: 1rem 0 2rem;
-    }
-    .main-container .content-bx button {
-        width: 12rem;
-        padding: 0.5rem 0.5rem;
-        font-size: 1.4rem;
-        margin: 0;
-    }
-
-    .main-container .content-bx .menu_image_group {
-        margin-top: 5rem;
-    }
-    .main-container .content-bx .menu_image_group img:hover {
-        transform: scale(1.2);
-    }
-
-    .main-container .main-dish-bx {
-        width: 100%;
-        margin-left: 0;
     }
 }
