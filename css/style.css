@@ -120,11 +120,11 @@ nav .brand {
 
 .main-container .content-bx .menu {
     height: 10rem;
-    bottom: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0;
+    margin: 0;
 }
 
 .main-container .content-bx .menu img {
@@ -188,7 +188,6 @@ nav .brand {
     }
     .main-container {
         grid-template-columns: 1fr;
-        height: 0;
     }
 
     .main-container .content-bx {
