@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all 0.45s ease;
+}
+
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: gray;
+    --second-color: #ccc;
+    --link-color: gray;
+    --main-color: #ff4d05;
+    --big-font: 5rem;
+    --h3-font: 2.4rem;
+    --h2-font: 3rem;
+    --h1-font: 4rem;
+    --p-font: 1.6rem;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav .brand {
+    width: 5rem;
+    height: 5rem;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding-left: 2.5rem;
+}
+nav ul li a {
+    color: var(--link-color);
+    font-size: 1.4rem;
+}
+
+nav ul li a:hover {
+    color: crimson;
+}
+
+nav .brand {
+    width: 5rem;
+    height: 5rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    padding: 2rem;
+}
+
+.main-container .content-bx {
+    width: 100%;
+}
+.main-container .content-bx .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+}
+.main-container .content-bx .title {
+    font-size: var(--h3-font);
+    color: crimson;
+}
+
+.main-container .content-bx .subtitle {
+    font-size: var(--h1-font);
+    font-weight: 600;
+}
+
+.main-container .content-bx p {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 1rem 0 2rem;
+}
+
+.main-container .content-bx button {
+    width: 15rem;
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    border: 0.2rem solid #323236;
+    background: #323236;
+    color: var(--second-color);
+    box-shadow: 0.3rem 0.5rem 0.8rem gray;
+    cursor: pointer;
+    margin: 2.5rem 0 0 0;
+}
+
+.main-container .content-bx button:hover {
+    transform: scale(1.1);
+}
+
+.main-container .content-bx .menu_image_group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.main-container .content-bx .menu_image_group .small-img-col {
+    flex-basis: 19%;
+    cursor: pointer;
+}
+
+.main-container .content-bx .menu_image_group .small-img-col > img {
+    width: 100%;
+}
+
+.main-container .content-bx .menu img:hover {
+    transform: scale(1.5);
+}
+
+.main-container .main-dish-bx {
+    width: 48%;
+    margin: 0 0 0 5rem;
+}
+
+.main-container .main-dish-bx > img {
+    width: 100%;
+}
+
+@media (max-width: 770px) {
+    :root {
+        --h3-font: 2rem;
+        --h1-font: 2.6rem;
+        --p-font: 1.4rem;
+    }
+
+    .main-container .content-bx {
+        padding: 0 2rem 0;
+    }
+
+    .main-container .content-bx .menu img {
+        margin-right: 2rem;
+    }
+
+    .main-container .dish-bx .dish1 {
+        margin-top: -4rem;
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 380px) {
+    :root {
+        --h3-font: 1.2rem;
+        --h2-font: 1.6rem;
+        --h1-font: 1.8rem;
+        --p-font: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+    .main-container {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .main-container .content-bx {
+        width: 100%;
+    }
+
+    .main-container .content-bx .content {
+        margin: 2rem 0 0 0;
+    }
+    .main-container .content-bx p {
+        margin: 1rem 0 2rem;
+    }
+    .main-container .content-bx button {
+        width: 12rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .main-container .content-bx .menu_image_group {
+        margin-top: 5rem;
+    }
+    .main-container .content-bx .menu_image_group img:hover {
+        transform: scale(1.2);
+    }
+
+    .main-container .main-dish-bx {
+        width: 100%;
+        margin-left: 0;
+    }
+}
