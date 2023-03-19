@@ -66,24 +66,22 @@ nav .brand {
 }
 
 .main-container {
-    height: calc(100vh - 10rem);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 2.5rem;
+    display: flex;
+    margin-top: 10rem;
+    padding: 2rem;
 }
 
 .main-container .content-bx {
-    height: 40rem;
-    margin: 0 0 0 5rem;
+    width: 40%;
+    margin-right: 5rem;
 }
 .main-container .content-bx .content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 3.5rem 0 0 0;
+    margin: 3.5rem 0 0 2rem;
 }
 .main-container .content-bx .title {
     font-size: var(--h3-font);
@@ -118,39 +116,32 @@ nav .brand {
     transform: scale(1.1);
 }
 
-.main-container .content-bx .menu {
-    height: 10rem;
+.main-container .content-bx .menu_image_group {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    margin-top: 10rem;
 }
 
-.main-container .content-bx .menu img {
-    width: 9rem;
-    height: 9rem;
-    margin-right: 3.5rem;
-    transition: all 0.45s ease;
+.main-container .content-bx .menu_image_group .small-img-col {
+    flex-basis: 19%;
     cursor: pointer;
+}
+
+.main-container .content-bx .menu_image_group .small-img-col > img {
+    width: 100%;
 }
 
 .main-container .content-bx .menu img:hover {
     transform: scale(1.5);
 }
 
-.main-container .dish-bx {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container .main-dish-bx {
+    width: 48%;
+    margin: 0 0 0 5rem;
 }
 
-.main-container .dish-bx .dish1 {
-    margin-top: 0;
-    width: 40rem;
-    height: 40rem;
-    filter: drop-shadow(0.5rem 1rem 1rem #000);
-    padding-top: 0;
+.main-container .main-dish-bx > img {
+    width: 100%;
 }
 
 @media (max-width: 770px) {
@@ -187,18 +178,17 @@ nav .brand {
         font-size: 1.4rem;
     }
     .main-container {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+        margin-top: 0;
     }
 
     .main-container .content-bx {
-        margin: 0;
-        order: 1;
+        width: 100%;
     }
 
     .main-container .content-bx .content {
-        margin: 0;
+        margin: 2rem 0 0 0;
     }
-
     .main-container .content-bx p {
         margin: 1rem 0 2rem;
     }
@@ -209,27 +199,15 @@ nav .brand {
         margin: 0;
     }
 
-    .main-container .content-bx .menu {
-        margin-left: 1.75rem;
+    .main-container .content-bx .menu_image_group {
+        margin-top: 5rem;
     }
-    .main-container .content-bx .menu img {
-        width: 4.5rem;
-        height: 4.5rem;
-        margin-right: 1.5rem;
+    .main-container .content-bx .menu_image_group img:hover {
+        transform: scale(1.2);
     }
 
-    .main-container .content-bx .menu img:hover {
-        transform: scale(2);
-    }
-
-    .main-container .dish-bx {
-        text-align: center;
-        padding: 2rem;
-    }
-    .main-container .dish-bx .dish1 {
-        padding-top: 5rem;
+    .main-container .main-dish-bx {
         width: 100%;
-        height: auto;
-        max-width: 100%;
+        margin-left: 0;
     }
 }

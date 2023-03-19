@@ -1,5 +1,5 @@
 const mainDish = document.querySelector(".dish1");
-const dishes = document.querySelectorAll(".menu img");
+const dishes = document.querySelectorAll(".small-img-col img");
 
 console.log("dishes");
 dishes.forEach((dish) => {
